@@ -24,8 +24,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
 
-    - name: Create Release and Upload APK
-      id: create_release
+    - name: Upload APK
       uses: softprops/action-gh-release@v1
       with:
         files: app/build/outputs/**/*.apk
