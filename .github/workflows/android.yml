@@ -32,4 +32,4 @@ jobs:
         name: Release ${{ github.event.release.tag_name }}
         draft: false
       env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ secrets.MY_GITHUB_TOKEN }}
